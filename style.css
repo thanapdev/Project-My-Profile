@@ -1,0 +1,162 @@
+/* body */
+body {
+    background-color: #333;
+}
+
+body p , h2 {
+    color: white;
+}
+
+
+/* Header */
+#header {
+    background-color: #333;
+    color: #fff;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+#header .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+#header .header .logo {
+    display: flex;
+    align-items: center;
+}
+
+#header .header .logo h2 {
+    margin: 0 0 0 10px;
+    font-size: 24px;
+}
+
+#header .header .logo button.toggle-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+
+    .logo h2 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+    }
+    .toggle {
+    display: none;
+    }
+    .toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    }
+    @media (max-width: 768px) {
+    .toggle {
+    display: block;
+    cursor: pointer;
+    }
+    .logo h2 {
+    font-size: 20px;
+    }
+    nav {
+    position: fixed;
+    top: 60px;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding: 20px;
+    transition: left 0.5s ease;
+    z-index: 998;
+    }
+    nav.show {
+    left: 0;
+    }
+    nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    }
+    nav li {
+    margin-bottom: 10px;
+    }
+    nav li a {
+    color: #fff;
+    text-decoration: none;
+    }
+    nav li a:hover {
+    color: #ccc;
+    }
+}
+
+#sidebar {
+position: fixed;
+top: 0;
+left: -200px;
+width: 200px;
+height: 100%;
+background-color: #333;
+padding: 20px;
+transition: left 0.5s ease;
+}
+#sidebar.show {
+left: 0;
+}
+
+#sidebar ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+#sidebar li {
+margin-bottom: 10px;
+}
+#sidebar li a {
+color: #fff;
+text-decoration: none;
+}
+#sidebar li a:hover {
+color: #ccc;
+}
+
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 24px;
+    transition: background-color 0.5s ease;
+    }
+    #back-to-top:hover {
+    background-color: #555;
+}
+
+
+.header h1{
+    margin-left: 100px;
+}
+
+.toggle-btn{
+    margin-top: 15px;
+}
