@@ -1,6 +1,11 @@
-function toggleSidebar() {
-    document.getElementById("sidebar").classList.toggle("show");
-}
+const toggleBtn = document.getElementById('toggle-btn');
+const sidebar = document.getElementById('sidebar');
+
+toggleBtn.addEventListener('click', () => {
+  sidebar.classList.toggle('d-none');
+});
+
+  
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
