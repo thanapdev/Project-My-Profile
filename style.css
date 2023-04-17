@@ -64,3 +64,32 @@ color: #ccc;
 .toggle-btn{
     margin-top: 15px;
 }
+
+/* progressbar */
+.progress-bar-html{
+    background: #FF5733;
+}
+
+.progress-bar-css{
+    background: #2965f1;
+}
+
+.progress-bar-js{
+    background: yellow;
+}
+
+.progress-bar-java{
+    background: #f89820;
+}
+
+.progress-bar-python{
+    background: #ffde57;
+}
+
+
+/* skill */
+.skill-img{
+    width: 100px;
+    height: 100px;
+    /* padding: auto; */
+}
